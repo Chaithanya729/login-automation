@@ -27,5 +27,6 @@ Cypress.Commands.add('logout', () => {
   // click burger menu
   cy.get(MENU_BTN_ID).click();
   // click logout link
-  cy.get(LOGOUT_LINK_ID).click();
+  // Add a 10 seconds timeout instead of default 4 seconds for slow connections
+  cy.get(LOGOUT_LINK_ID, {timeout : 10000}).click();
 });
