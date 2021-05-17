@@ -4,7 +4,7 @@ import constants from '../../../support/constants';
 
 const loginPage = new LoginPage();
 
-Given('User navigates to sausedemo.com', () => {
+Given('User navigates to saucedemo.com', () => {
   cy.visit('/');
   cy.title().should('eq', constants.PAGE_TITLE);
 });

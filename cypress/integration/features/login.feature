@@ -1,7 +1,7 @@
 Feature: Login
 
     Background:
-        Given User navigates to sausedemo.com
+        Given User navigates to saucedemo.com
 
     Scenario Outline: Users unsuccessful login to application
         When User login with username as '<username>' and password as '<password>'
